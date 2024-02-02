@@ -497,10 +497,23 @@ input::placeholder {
 }
 
 .footer-button {
- display: inline-flex;
-  border: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 40px;
+  gap: 16px;
+  border-radius: 4px;
   background-color: #4D5AE5;
   padding: 8px 24px;
   color: #FFF;
+  cursor: pointer;
+  border: none;
+}
+
+.button-footer-container {
+  display: flex;
+  align-self: center;
+  margin-left: 24px;
 }
 
