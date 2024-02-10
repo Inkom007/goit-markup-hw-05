@@ -430,7 +430,7 @@ width: calc((100% - 72px) / 4);
 }
  
 .social-footer-container {
-  margin-right: 80px;
+  margin-right: auto;
 }
 
 .social-media {
@@ -639,6 +639,7 @@ letter-spacing: 0.04em;
  }
 
  .textarea {
+  display: block;
   padding: 8px 16px;
   height: 120px;
   width: 100%;
@@ -659,6 +660,10 @@ letter-spacing: 0.04em;
   border-color: #4D5AE5;
 }
 
+textarea::placeholder {
+  color: rgba(46, 47, 66, 0.40);
+}
+
  .container-input {
   position: relative;
  }
@@ -671,6 +676,7 @@ letter-spacing: 0.04em;
   left: 16px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #2E2F42;
  }
 
   .modal-input:hover + .icon-input,
@@ -717,8 +723,7 @@ letter-spacing: 0.04em;
 
  .send-btn {
   display: block;
-  margin-left: 95px;
-  margin-bottom: 24px;
+  margin: auto;
   min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
